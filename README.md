@@ -8,7 +8,7 @@ Serve this directory from a local web server (for example, run `python -m http.s
 
 ## GitHub Pages
 
-The repository includes a GitHub Actions Pages workflow at `.github/workflows/pages.yml`. It publishes the static site files from the repository root on pushes to `main` and on manual workflow dispatch. In repository **Settings → Pages**, select **GitHub Actions** as the build and deployment source. Once a deployment succeeds, GitHub displays the public site URL on that Pages settings screen and in the workflow deployment environment. Publishing the site requires the repository to be public unless its GitHub plan supports private-repository Pages.
+The repository includes a GitHub Actions Pages workflow at `.github/workflows/pages.yml` and is configured to deploy with **GitHub Actions**. It publishes the static site files on pushes to `main` and on manual workflow dispatch. The public site is available at [rushgrimes.github.io/website-carousel-nws](https://rushgrimes.github.io/website-carousel-nws/); the deployment environment and **Settings → Pages** also show its URL. Publishing the site requires the repository to be public unless its GitHub plan supports private-repository Pages.
 
 The rolling weather banner and forecast card are fixed to Rush (53.5228, -6.1043) and use the public [Open-Meteo forecast API](https://open-meteo.com/en/docs); there is no geolocation fallback or weather from another place. The page reports an unavailable forecast if the service cannot be reached. The banner can be paused and stops moving when reduced motion is requested.
 
